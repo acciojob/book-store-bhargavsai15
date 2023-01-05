@@ -15,12 +15,12 @@ public class BookService {
         return bookRepository.save(book);
     }
 
-    public Book findBookById(String id){
-        return bookRepository.findBookById(Integer.parseInt(id));
+    public Book findBookById(Integer id){
+        return bookRepository.findBookById(id);
     }
 
-    public void deleteBookById(String id){
-        bookRepository.deleteBookById(Integer.parseInt(id));
+    public void deleteBookById(Integer id){
+        bookRepository.deleteBookById(id);
     }
 
     public List<Book> findAllBooks(){
